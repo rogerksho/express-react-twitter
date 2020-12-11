@@ -47,13 +47,9 @@ const Tweet = (tweet, index) => {
   return(
     <div key={index} style={{borderStyle:'solid',borderColor:'black'}}>
       <h2>tweet {index+1}</h2>
-      <p>{JSON.stringify(tweet.text)}</p>
+      <p>{tweet.text}</p>
     </div>
   )
 }
 
 export default App;
-
-//res.map((tweet, index) => {
-//  Tweet(tweet, index)
-//})
